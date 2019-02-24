@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3c4556;
+  color: #f2f2f2;
+  font-family: "Source Sans Pro";
+  font-weight: 300;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-flow: column;
+}
+.main-content,
+footer {
+  max-width: 400px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 50px;
+}
+p {
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+  color: rgba(80, 250, 123, 1);
+  transition: color 0.3s linear;
+}
+a:hover {
+  color: rgba(80, 250, 123, 0.7);
+}
+a.pink {
+  color: rgba(255, 121, 198, 1);
+}
+a.pink:hover {
+  color: rgba(255, 121, 198, 0.7);
+}
+a.orange {
+  color: rgba(255, 184, 108, 1);
+}
+a.orange:hover {
+  color: rgba(255, 184, 108, 0.7);
+}
+a.cyan {
+  color: rgba(139, 233, 253, 1);
+}
+a.cyan:hover {
+  color: rgba(139, 233, 253, 0.7);
+}
+a.purple {
+  color: rgba(189, 147, 249, 1);
+}
+a.purple:hover {
+  color: rgba(189, 147, 249, 0.7);
+}
+
+label,
+.message {
+  font-family: "Abril Fatface", cursive;
+  font-size: 42px;
+  text-align: center;
+  display: block;
+  color: #bcc2cd;
+  margin: 10px 0;
+}
+input,
+.button {
+  width: 100%;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  margin: 10px 0;
+  font-family: "Abril Fatface", cursive;
+}
+input {
+  background: #bcc2cd;
+  border: 1px solid #bd93f9;
+  color: #bd93f9;
+  font-size: 32px;
+  line-height: 52px;
+}
+input:focus {
+  color: #ff79c6;
+  border-color: #ff79c6;
+}
+.button {
+  display: block;
+  border: 1px solid transparent;
+  background: rgba(255, 184, 108, 1);
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 15px;
+  color: #f2f2f2;
+}
+.button:focus,
+.button:hover {
+  color: #f2f2f2;
+  background: rgba(255, 184, 108, 0.7);
+}
+
+.message.error {
+  color: #ff5555;
+}
